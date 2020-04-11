@@ -1,0 +1,37 @@
+ion-title{
+    text-align: center;
+    font-family: HelveticaNeue;
+}
+
+ion-list-header{
+    font-family: HelveticaNeue;
+    font-size: 20px;
+    --border-color: rgb(89, 92, 90);
+    padding-right: 15px;
+}
+
+#itemimage{
+    max-width: 300px;
+    max-height: 300px;
+    border: 2px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+ion-item{
+    font-family: HelveticaNeue;
+    font-size: 14px;
+    padding-right: 15px;
+}
+
+.itemDetail{
+    color: rgb(104, 105, 105);
+    font-weight: bold;
+}

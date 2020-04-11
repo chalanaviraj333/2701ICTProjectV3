@@ -1,0 +1,24 @@
+#titleadditem{
+    text-align: start;
+    font-family: HelveticaNeue;
+}
+
+ion-input{
+    font-family: HelveticaNeue;
+}
+
+
+ion-item{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#addButton{
+    max-width: 90vw;
+    max-height: 6vh;
+    margin-left: auto;
+    margin-right: auto;
+    --background: #37373a;
+    font-family: PatuaOne-Regular;
+    font-size: 17px;
+  }

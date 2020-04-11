@@ -1,0 +1,26 @@
+<ion-header>
+</ion-header>
+<ion-content> 
+  <ion-grid fixed>       
+    <img src= "assets/images/Logo.png" class="center">
+    <h1>Log in Now</h1>
+    <p>Please login to continue using our app</p>
+    <hr>
+    <ion-item>
+    <ion-input id="username" [(ngModel)]="userName" name="username" placeholder="Username"></ion-input>
+    </ion-item>
+
+    <hr>
+    <ion-item id="passwordField">
+      <ion-input id="password" name="password" placeholder="Password" [type]="showPassword ? 'text' : 'password'"></ion-input>
+      <ion-icon slot="end" [name]="passwordToggleIcon" (click)="togglePassword()"></ion-icon> 
+    </ion-item>
+    <hr>
+    <hr>
+    <ion-button id="loginButton" expand="block" (click)="login()">Login</ion-button>
+    <ion-item id="signupitem">
+      <p id="newaccount">Don't have an account?</p>
+      <p id="signup" (click)="signupButtonFun()">Sign up</p>
+    </ion-item>
+  </ion-grid>
+</ion-content>

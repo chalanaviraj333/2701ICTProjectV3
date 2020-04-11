@@ -1,0 +1,44 @@
+<ion-header translucent="true">
+  <ion-toolbar>  
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Carbine Knob Set</ion-title>  
+    <ion-buttons slot="end">
+      <ion-button (click)="presentPopover($event)">
+        <ion-icon slot="icon-only" name="ellipsis-vertical-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>        
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-img id="itemimage" src="assets/images/lock1.jpg" class="center"></ion-img>
+  <hr>
+  <ion-list-header lines="inset">
+    <ion-label>Item Details</ion-label>
+  </ion-list-header>
+
+  <ion-list>
+    <ion-item>
+      <ion-label class="itemDetail">Product ID </ion-label><ion-label>KD3421</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label class="itemDetail">Price </ion-label><ion-label>$34.90</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label class="itemDetail">Quantity </ion-label><ion-label>65</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label class="itemDetail">Product type </ion-label><ion-label>Domestic</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label class="itemDetail">Date Purchased </ion-label><ion-label>2019/12/20</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label class="itemDetail">Notes </ion-label><ion-label class="ion-text-wrap">Compitable with most fire doors.</ion-label>
+    </ion-item>
+  </ion-list>
+
+
+</ion-content>

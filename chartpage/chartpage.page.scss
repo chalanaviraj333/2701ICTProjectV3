@@ -1,0 +1,47 @@
+ion-title{
+    text-align: start;
+    font-family: HelveticaNeue;
+}
+
+ion-list-header{
+    font-size: 16px;
+    //font-weight: bold;
+    font-family: HelveticaNeue;
+    --border-color: rgb(89, 92, 90);
+    padding-right: 15px;
+}
+
+ion-item{
+    padding-right: 13px;
+}
+
+#itemSold{
+    font-size: 16px;
+    padding-right: 10px;
+    color: rgb(25, 70, 196);
+}
+
+#itemOrder{
+    text-align: end;
+    font-size: 16px;
+    padding-right: 10px;
+    color: black;
+}
+
+#itemimage{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+
+
+
+ 

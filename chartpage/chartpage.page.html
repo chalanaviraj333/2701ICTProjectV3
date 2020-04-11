@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Monthly Sales</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismiss()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-img id="itemimage" src="assets/images/chart.jpg" class="center"></ion-img>
+  <hr>
+  <ion-list-header lines="inset">
+    <ion-label>Monthly Flow (March)</ion-label>
+  </ion-list-header>
+
+  <ion-list>
+      <ion-item *ngFor="let item of monthlyFlow">
+        <ion-label class="ion-text-wrap">
+          <ion-text>
+            <h3>{{item.id}}.{{item.name}}</h3>
+          </ion-text>
+        </ion-label>
+        <ion-note id="itemSold" slot="end">{{item.sold}}</ion-note>
+        <ion-note id="itemOrder" slot="end">{{item.ordered}}</ion-note>
+    </ion-item>
+  </ion-list>
+</ion-content>

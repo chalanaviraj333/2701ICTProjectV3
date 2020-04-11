@@ -1,0 +1,67 @@
+::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  display: none;
+}
+
+
+ion-searchbar{
+    --background: #cdcdcd;
+}
+
+#stockvalue{
+    color: red;
+    text-align: end;
+}
+
+#pricevalue{
+    text-align: center;
+}
+
+.listclass{
+    font-size: 14px;
+}
+
+.listheader{
+    font-size: 20px;
+    //font-weight: bold;
+    font-family: HelveticaNeue;
+}
+
+p{
+    color: rgb(247, 114, 81);
+}
+
+#commercialCheckBox{
+    color: rgb(10, 136, 21);
+    font-size: 15px;
+    text-align: end;
+    padding-right: 10px;
+}
+
+ion-list-header{
+    --border-color: rgb(89, 92, 90);
+    padding-right: 12px;
+}
+
+#allItemsHeader{
+    padding-right: 10px;
+}
+
+ion-item{
+    padding-right: 12px;
+}
+
+
+ion-note{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+ion-title{
+    text-align: start;
+    font-family: HelveticaNeue;
+}
+
+ion-icon{
+    color: rgb(83, 83, 83);
+}

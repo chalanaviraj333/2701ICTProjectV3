@@ -1,0 +1,74 @@
+
+ion-content{
+    --background: #fff url('../../assets/images/cover.jpg') no-repeat center center / cover;
+  }
+  
+ion-item{
+  --border-color: rgb(89, 92, 90);
+  margin-left: 10px;
+  margin-right: 15px;
+
+}
+
+h1{
+  margin-top: 50px;
+  text-align: center;
+  font-family: PatuaOne-Regular;
+}
+
+p{
+  text-align: center;
+}
+
+
+  
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+  
+  
+.css{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px !important;
+    padding-right: 10px;
+    font-size: 0.9em;
+    border: 1px solid 	#cdcdcd !important;
+    --background: rgb(219,219,219) !important;
+    max-width: 80vw;
+    max-height: 10vh;
+  }
+
+  
+  
+#signupButton{
+    max-width: 80vw;
+    max-height: 6vh;
+    margin-left: auto;
+    margin-right: auto;
+    --background: #37373a;
+    font-family: PatuaOne-Regular;
+    font-size: 17px;
+  }
+  
+#existaccount{
+    //text-align: center;
+    font-size: 12px;
+  }
+  
+#login{
+    //text-align: center;
+    font-size: 12px;
+    padding-left: 10px;
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+.inline{
+    display: inline;
+    padding-left: 100px;
+  }

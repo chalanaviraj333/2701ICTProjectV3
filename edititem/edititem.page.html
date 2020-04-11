@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Edit Item</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismiss()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+  <ion-input id="productname" placeholder="Product Name" class="css"></ion-input>
+  </ion-item>
+  <ion-item>
+  <ion-input id="productid" placeholder="Product ID" class="css"></ion-input>
+  </ion-item>
+  <ion-item>
+  <ion-input id="price" placeholder="Price" class="css"></ion-input>
+  </ion-item>
+  <ion-item>
+  <ion-input id="quantity" placeholder="Quantity" class="css"></ion-input>
+  </ion-item>
+  <ion-item lines="none">
+  <ion-textarea rows="6" cols="20" placeholder="Enter any notes here..."></ion-textarea>
+  </ion-item>
+  <hr>
+  <ion-button id="editItemButton" expand="block" (click)="itemPage()">Done</ion-button>
+</ion-content>

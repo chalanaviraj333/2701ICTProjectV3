@@ -1,0 +1,50 @@
+<ion-header translucent="true">
+  <ion-toolbar>  
+    <ion-buttons slot="primary">
+      <ion-button (click)="dismiss()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title id="titleadditem">Add Item</ion-title>          
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+  <ion-item>
+  <ion-input class="inputClass" placeholder="Product Name"></ion-input>
+  </ion-item>
+  <ion-item>
+  <ion-input placeholder="Product ID"></ion-input>
+  </ion-item>
+  <ion-item>
+  <ion-input placeholder="Price"></ion-input>
+  </ion-item>
+  <ion-item>
+  <ion-input placeholder="Quantity"></ion-input>
+  </ion-item>
+  <ion-list>
+    <ion-radio-group value="biff">
+      <ion-item>
+        <ion-label>Domestic </ion-label>
+        <ion-radio slot="end" value="biff"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Commercial</ion-label>
+        <ion-radio slot="end" value="griff"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+
+  <ion-item>
+    <ion-label position="floating">Date Purchased</ion-label>
+    <ion-datetime displayFormat="MM/DD/YYYY" min="2019-12-31" max="2020-12-31" value="2002-09-23T15:03:46.789"></ion-datetime>
+  </ion-item>
+  <ion-item lines="none">
+  <ion-textarea rows="6" cols="20" placeholder="Enter any notes here..."></ion-textarea>
+  </ion-item>
+  <ion-button id="addButton" expand="block" (click)="itemPage()">Add</ion-button>
+  <hr>
+  <hr>
+</ion-content>
+

@@ -1,0 +1,107 @@
+<ion-header translucent="true">
+  <ion-toolbar>
+    <ion-buttons slot="primary">
+      <ion-button (click)="chartPage()">
+        <ion-icon slot="icon-only" name="pie-chart-outline"></ion-icon>
+      </ion-button>
+      <ion-button (click)="presentModal()">
+        <ion-icon slot="icon-only" name="duplicate-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Welcome back {{userName}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+<!-- Searchbar with danger color -->
+<ion-searchbar placeholder="Enter Product name,Code"></ion-searchbar>
+<ion-list-header lines="inset">
+  <ion-label class="listheader">Most Selling</ion-label>
+</ion-list-header>
+  
+<ion-list>
+  <ion-item-sliding *ngFor="let item of itemsMost; let i = index">
+    <ion-item button (click) = "itemButton(i)">
+      <ion-label class="ion-text-wrap">
+        <ion-text>
+          <h3>{{item.name}}</h3>
+        </ion-text>
+        <p>${{item.price}}</p>
+      </ion-label>
+      <ion-note slot="end">{{item.available}}</ion-note>
+    </ion-item>
+  <ion-item-options side="end">
+    <ion-item-option (click)="unrea()">Buy</ion-item-option>
+    <ion-item-option color="danger" (click)="unre()">Sell</ion-item-option>
+  </ion-item-options>
+  </ion-item-sliding>
+</ion-list>
+
+
+<ion-list-header id="allItemsHeader" lines="inset">
+  <ion-label class="listheader">All Items</ion-label>
+  <ion-label id="commercialCheckBox">Commercial</ion-label>
+  <ion-checkbox color="secondary"></ion-checkbox>
+</ion-list-header>
+  
+<ion-list>
+  <ion-item-sliding *ngFor="let item of itemsAll; let i = index">
+    <ion-item button (click) = "itemButton(i)">
+      <ion-label class="ion-text-wrap">
+        <ion-text>
+          <h3>{{item.name}}</h3>
+        </ion-text>
+        <p>${{item.price}}</p>
+      </ion-label>
+      <ion-note slot="end">{{item.available}}</ion-note>
+    </ion-item>
+  <ion-item-options side="end">
+    <ion-item-option (click)="unrea()">Buy</ion-item-option>
+    <ion-item-option color="danger" (click)="unre()">Sell</ion-item-option>
+  </ion-item-options>
+  </ion-item-sliding>
+</ion-list>
+
+
+  </ion-content>
+
+
+
+
+
+
+  <!--<ion-list>
+  <ion-item-sliding>
+    <ion-item>
+      <ion-label class="listclass">Dead Bolt Lock</ion-label>
+      <ion-label id="pricevalue" class="listclass">$12.90</ion-label>
+      <ion-label id="stockvalue" class="listclass">4</ion-label>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="unread(item)">Unread</ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+
+  <ion-item-sliding>
+    <ion-item>
+      <ion-label class="listclass">Cavity Sliding Lock</ion-label>
+      <ion-label id="pricevalue" class="listclass">$18.90</ion-label>
+      <ion-label id="stockvalue" class="listclass">2</ion-label>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="unread(item)">Unread</ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+
+  <ion-item-sliding>
+    <ion-item>
+      <ion-label class="listclass">Dead Lock</ion-label>
+      <ion-label id="pricevalue" class="listclass">$110.90</ion-label>
+      <ion-label id="stockvalue" class="listclass">6</ion-label>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="unread(item)">Buy</ion-item-option>
+      <ion-item-option (click)="unread(item)">Sell</ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-list>-->
